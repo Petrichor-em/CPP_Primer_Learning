@@ -18,8 +18,8 @@ int main(){
 	while(mid!=end && mid!=beg && *mid!=sought){
 		if(sought < *mid){ //sought在mid之前
 			end = mid; //则sought在前半部分, 将end置于mid, 忽略掉后半部分的元素
-		}else{
-			beg = mid; //sought在前半部分
+		}else{ //sought在后半部分
+			beg = mid;
 		}
 		mid = beg + (end - beg)/2; //重置mid
 	}
