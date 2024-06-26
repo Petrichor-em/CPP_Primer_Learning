@@ -26,3 +26,5 @@ int main(){
 	bind = d;
 	d.print(std::cout);
 	return 0;
+
+}
